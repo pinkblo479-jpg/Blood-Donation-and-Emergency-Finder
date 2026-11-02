@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation and Emergency Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>❤️ LifeSaver</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donors.html">Find Donor</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Donate Blood, Save Lives</h1>
+        <p>Find blood donors and get help during emergencies.</p>
+        <a class="btn" href="donors.html">Find a Blood Donor</a>
+        <a class="btn emergency-btn" href="emergency.html">Emergency Help</a>
+    </section>
+
+    <section id="donors" class="section">
+        <h2>Find a Blood Donor</h2>
+        <p>Search for the blood group you need.</p>
+
+        <select id="bloodGroup">
+            <option value="">Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <button onclick="searchDonor()">Search Donor</button>
+        <p id="result"></p>
+    </section>
+
+    <section id="emergency" class="section emergency">
+        <h2>Emergency Help</h2>
+        <p>Need urgent blood assistance? Contact your local hospital
+        or emergency services.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Our Project</h2>
+        <p>Our goal is to connect blood donors with people in need
+        and make emergency assistance easier to find.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 LifeSaver | Blood Donation and Emergency Finder</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Blood Request - LifeSaver</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>❤️ LifeSaver</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donors.html">Find Donor</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="emergency-hero">
+
+        <h1>Emergency Blood Request</h1>
+
+        <p>
+            Request blood for a patient during an emergency.
+            Every second matters.
+        </p>
+
+    </section>
+
+    <section class="emergency-form-section">
+
+        <div class="emergency-form-box">
+
+            <h2>Patient Information</h2>
+
+            <p>Fill in the details below.</p>
+
+            <form id="emergencyForm">
+
+                <label>Patient Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter patient name"
+                    required
+                >
+
+                <label>Required Blood Group</label>
+
+                <select required>
+                    <option value="">Select Blood Group</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+
+                <label>Required Blood Units</label>
+
+                <input
+                    type="number"
+                    min="1"
+                    max="20"
+                    placeholder="Enter number of units"
+                    required
+                >
+
+                <label>Hospital Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter hospital name"
+                    required
+                >
+
+                <label>City</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter city"
+                    required
+                >
+
+                <label>Contact Number</label>
+
+                <input
+                    type="tel"
+                    placeholder="03XX-XXXXXXX"
+                    required
+                >
+
+                <label>Additional Details</label>
+
+                <textarea
+                    rows="4"
+                    placeholder="Enter any additional information"
+                ></textarea>
+
+                <button type="submit">
+                    Submit Emergency Request
+                </button>
+
+            </form>
+
+            <p id="emergencyMessage"></p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>
+            © 2026 LifeSaver | Blood Donation and Emergency Finder
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

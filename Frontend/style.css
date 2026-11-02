@@ -1,0 +1,936 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fc;
+    color: #333;
+}
+
+header {
+    background: #b5122b;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: #ffe9ec;
+}
+
+.hero h1 {
+    color: #b5122b;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn, button {
+    display: inline-block;
+    background: #b5122b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.emergency-btn {
+    background: #333;
+}
+
+.section {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.section h2 {
+    color: #b5122b;
+    margin-bottom: 15px;
+}
+
+select {
+    padding: 12px;
+    margin: 15px 5px;
+    border-radius: 5px;
+}
+
+.emergency {
+    background: #fff0f0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+.signup-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #ffe9ec;
+}
+
+.signup-box {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signup-box h1 {
+    text-align: center;
+    color: #b5122b;
+    margin-bottom: 10px;
+}
+
+.signup-box p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.signup-box input,
+.signup-box select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.signup-box button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.login-text {
+    margin-top: 20px;
+}
+
+.login-text a {
+    color: #b5122b;
+}
+
+.login-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #ffe9ec;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #b5122b;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.signup-text {
+    margin-top: 20px;
+}
+
+.signup-text a {
+    color: #b5122b;
+}
+
+/* Find Donor Page */
+
+.donor-hero {
+    text-align: center;
+    padding: 65px 20px;
+    background: #ffe9ec;
+}
+
+.donor-hero h1 {
+    color: #b5122b;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.donor-hero p {
+    font-size: 17px;
+}
+
+.donor-search-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #f8f9fc;
+}
+
+.donor-search-box {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.donor-search-box h2 {
+    text-align: center;
+    color: #b5122b;
+    margin-bottom: 10px;
+}
+
+.donor-search-box p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.donor-search-box label {
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+.donor-search-box input,
+.donor-search-box select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.donor-search-box button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.donor-info-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.donor-info-section h2 {
+    color: #b5122b;
+    margin-bottom: 30px;
+}
+
+.donor-info-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.donor-info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.donor-info-card h3 {
+    color: #b5122b;
+    margin-bottom: 15px;
+}
+
+#donorSearchMessage {
+    margin-top: 20px;
+    color: #b5122b;
+}
+
+/* Donor Details Page */
+
+.details-hero {
+    text-align: center;
+    padding: 55px 20px;
+    background: #ffe9ec;
+}
+
+.details-hero h1 {
+    color: #b5122b;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.donor-details-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #f8f9fc;
+}
+
+.donor-profile-card {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.donor-avatar {
+    width: 90px;
+    height: 90px;
+    background: #ffe9ec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0 auto 20px;
+}
+
+.donor-profile-card h2 {
+    text-align: center;
+    color: #b5122b;
+    margin-bottom: 15px;
+}
+
+.donor-status {
+    text-align: center;
+    color: green;
+    background: #e8f8e8;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.donor-detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.donor-detail-row span {
+    color: #666;
+}
+
+.donor-detail-row strong {
+    text-align: right;
+}
+
+.blood-group {
+    color: #b5122b;
+    font-size: 20px;
+}
+
+.details-back-btn {
+    display: block;
+    text-align: center;
+    background: #b5122b;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+/* Emergency Request Page */
+
+.emergency-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #ffe9ec;
+}
+
+.emergency-hero h1 {
+    color: #b5122b;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.emergency-hero p {
+    font-size: 17px;
+}
+
+.emergency-form-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #f8f9fc;
+}
+
+.emergency-form-box {
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-form-box h2 {
+    text-align: center;
+    color: #b5122b;
+    margin-bottom: 10px;
+}
+
+.emergency-form-box p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.emergency-form-box label {
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+.emergency-form-box input,
+.emergency-form-box select,
+.emergency-form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+.emergency-form-box textarea {
+    resize: vertical;
+}
+
+.emergency-form-box button {
+    width: 100%;
+    margin-top: 25px;
+    background: #b5122b;
+}
+
+#emergencyMessage {
+    margin-top: 20px;
+    color: #b5122b;
+}
+
+/* Nearby Hospitals Page */
+
+.hospital-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hospital-section h2 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.hospital-search {
+    margin: 25px 0;
+}
+
+.hospital-search input {
+    width: 60%;
+    max-width: 350px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.hospital-search button {
+    padding: 12px 20px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hospital-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.hospital-card {
+    background-color: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    text-align: left;
+}
+
+.hospital-card h3 {
+    color: #c62828;
+    margin-bottom: 12px;
+}
+
+.hospital-card p {
+    margin: 8px 0;
+    color: #333;
+}
+
+#hospitalMessage {
+    margin: 15px 0;
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Profile Page */
+
+.profile-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-section h2 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.profile-card {
+    background-color: white;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.profile-icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    color: #c62828;
+    margin: 10px 0 5px;
+}
+
+.profile-role {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.profile-details {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.profile-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-item strong {
+    color: #333;
+}
+
+.profile-item span {
+    color: #555;
+    text-align: right;
+}
+
+.profile-card button {
+    padding: 12px 25px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#profileMessage {
+    color: #c62828;
+    margin-top: 15px;
+}
+
+/* FAQ Page */
+
+.faq-section {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.faq-section h2 {
+    color: #c62828;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.faq-section > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.faq-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.10);
+}
+
+.faq-item h3 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Admin Dashboard */
+
+.admin-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.admin-section > h2 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.admin-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.admin-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.admin-card h3 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.admin-number {
+    color: #c62828;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.admin-management-heading {
+    margin-top: 40px;
+}
+
+.admin-management {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.management-card {
+    flex: 1;
+    min-width: 220px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.management-card h3 {
+    color: #c62828;
+    margin-bottom: 12px;
+}
+
+.management-card p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.management-card a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #c62828;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.management-card a:hover {
+    background-color: #a51f1f;
+}
+
+/* Admin Manage Donors Page */
+
+.manage-donors-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.manage-donors-section h2 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.donor-admin-search {
+    margin: 25px 0;
+}
+
+.donor-admin-search input {
+    width: 60%;
+    max-width: 350px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.donor-admin-search button,
+.admin-donor-table button {
+    padding: 10px 15px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+.admin-donor-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.admin-donor-table th,
+.admin-donor-table td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-donor-table th {
+    background-color: #c62828;
+    color: white;
+}
+
+.admin-donor-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#adminDonorMessage {
+    color: #c62828;
+    margin: 10px 0;
+}
+
+/* Admin Manage Hospitals Page */
+
+.manage-hospitals-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.manage-hospitals-section h2 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.hospital-admin-search {
+    margin: 25px 0;
+}
+
+.hospital-admin-search input {
+    width: 60%;
+    max-width: 350px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 8px;
+}
+
+.hospital-admin-search button,
+.admin-hospital-table button {
+    padding: 10px 15px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-hospital-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.admin-hospital-table th,
+.admin-hospital-table td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-hospital-table th {
+    background-color: #c62828;
+    color: white;
+}
+
+.admin-hospital-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#adminHospitalMessage {
+    color: #c62828;
+    margin: 10px 0;
+}
+
+/* Admin Reports Page */
+
+.admin-reports-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.admin-reports-section h2 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+.report-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.report-card {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.report-card h3 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.report-card p {
+    color: #c62828;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.report-table-heading {
+    margin-top: 40px;
+}
+
+.admin-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.admin-report-table th,
+.admin-report-table td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-report-table th {
+    background-color: #c62828;
+    color: white;
+}
+
+.admin-report-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

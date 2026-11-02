@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Blood Donation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Donation & Emergency Finder</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donors.html">Find Donor</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="hospitals.html">Nearby Hospitals</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+
+        <h2>My Profile</h2>
+        <p>View and manage your personal information.</p>
+
+        <div class="profile-card">
+
+            <div class="profile-icon">👤</div>
+
+            <h3>Ali Ahmed</h3>
+            <p class="profile-role">Blood Donor</p>
+
+            <div class="profile-details">
+
+                <div class="profile-item">
+                    <strong>Full Name:</strong>
+                    <span>Ali Ahmed</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>Email:</strong>
+                    <span>ali@example.com</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>Phone:</strong>
+                    <span>0300-1234567</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>Blood Group:</strong>
+                    <span>O+</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>City:</strong>
+                    <span>Lahore</span>
+                </div>
+
+                <div class="profile-item">
+                    <strong>Donor Status:</strong>
+                    <span>Available</span>
+                </div>
+
+            </div>
+
+            <button onclick="editProfile()">Edit Profile</button>
+
+            <p id="profileMessage"></p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

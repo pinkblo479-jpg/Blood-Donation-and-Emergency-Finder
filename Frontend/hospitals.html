@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Hospitals - Blood Donation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Donation & Emergency Finder</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donors.html">Find Donor</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="hospitals.html">Nearby Hospitals</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="hospital-section">
+        <h2>Nearby Hospitals</h2>
+        <p>Find hospitals where you can contact for blood donation and emergency services.</p>
+
+        <div class="hospital-search">
+            <input type="text" id="hospitalCity"
+                   placeholder="Enter your city">
+
+            <button onclick="searchHospitals()">Search Hospitals</button>
+        </div>
+
+        <div id="hospitalMessage"></div>
+
+        <div class="hospital-container">
+
+            <div class="hospital-card">
+                <h3>City Hospital</h3>
+                <p><strong>City:</strong> Lahore</p>
+                <p><strong>Address:</strong> Main Road, Lahore</p>
+                <p><strong>Emergency:</strong> Available</p>
+                <p><strong>Contact:</strong> 0300-1234567</p>
+            </div>
+
+            <div class="hospital-card">
+                <h3>General Hospital</h3>
+                <p><strong>City:</strong> Islamabad</p>
+                <p><strong>Address:</strong> Blue Area, Islamabad</p>
+                <p><strong>Emergency:</strong> Available</p>
+                <p><strong>Contact:</strong> 0300-7654321</p>
+            </div>
+
+            <div class="hospital-card">
+                <h3>Central Medical Hospital</h3>
+                <p><strong>City:</strong> Karachi</p>
+                <p><strong>Address:</strong> Main Boulevard, Karachi</p>
+                <p><strong>Emergency:</strong> Available</p>
+                <p><strong>Contact:</strong> 0300-9876543</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

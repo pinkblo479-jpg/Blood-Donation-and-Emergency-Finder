@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reports - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Donation & Emergency Finder</h1>
+
+        <nav>
+            <a href="admin.html">Dashboard</a>
+            <a href="admin-donors.html">Manage Donors</a>
+            <a href="admin-hospitals.html">Manage Hospitals</a>
+            <a href="admin-reports.html">View Reports</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="admin-reports-section">
+
+        <h2>System Reports</h2>
+        <p>View emergency requests and blood donation system reports.</p>
+
+        <div class="report-stats">
+
+            <div class="report-card">
+                <h3>Total Requests</h3>
+                <p>45</p>
+            </div>
+
+            <div class="report-card">
+                <h3>Pending Requests</h3>
+                <p>12</p>
+            </div>
+
+            <div class="report-card">
+                <h3>Completed Requests</h3>
+                <p>33</p>
+            </div>
+
+        </div>
+
+        <h2 class="report-table-heading">Emergency Request Report</h2>
+
+        <div class="admin-table-container">
+
+            <table class="admin-report-table">
+
+                <thead>
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Patient Name</th>
+                        <th>Blood Group</th>
+                        <th>City</th>
+                        <th>Hospital</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>101</td>
+                        <td>Usman Ali</td>
+                        <td>A+</td>
+                        <td>Lahore</td>
+                        <td>City Hospital</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Ahmed Khan</td>
+                        <td>O-</td>
+                        <td>Islamabad</td>
+                        <td>General Hospital</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td>Bilal Ahmed</td>
+                        <td>B+</td>
+                        <td>Karachi</td>
+                        <td>Central Medical Hospital</td>
+                        <td>Pending</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

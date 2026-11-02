@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Donors - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Donation & Emergency Finder</h1>
+
+        <nav>
+            <a href="admin.html">Dashboard</a>
+            <a href="admin-donors.html">Manage Donors</a>
+            <a href="admin-hospitals.html">Manage Hospitals</a>
+            <a href="admin-reports.html">View Reports</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="manage-donors-section">
+
+        <h2>Manage Donors</h2>
+        <p>View and manage registered blood donors.</p>
+
+        <div class="donor-admin-search">
+            <input type="text" id="donorSearch"
+                   placeholder="Search donor by name">
+
+            <button onclick="searchAdminDonors()">Search</button>
+        </div>
+
+        <div id="adminDonorMessage"></div>
+
+        <div class="admin-table-container">
+
+            <table class="admin-donor-table">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Donor Name</th>
+                        <th>Blood Group</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="donorTableBody">
+
+                    <tr>
+                        <td>1</td>
+                        <td>Ali Ahmed</td>
+                        <td>O+</td>
+                        <td>Lahore</td>
+                        <td>0300-1234567</td>
+                        <td>Available</td>
+                        <td>
+                            <button onclick="changeDonorStatus(this)">
+                                Change Status
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Ahmed Khan</td>
+                        <td>A+</td>
+                        <td>Islamabad</td>
+                        <td>0300-7654321</td>
+                        <td>Available</td>
+                        <td>
+                            <button onclick="changeDonorStatus(this)">
+                                Change Status
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Usman Ali</td>
+                        <td>B+</td>
+                        <td>Karachi</td>
+                        <td>0300-9876543</td>
+                        <td>Unavailable</td>
+                        <td>
+                            <button onclick="changeDonorStatus(this)">
+                                Change Status
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Hospitals - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Donation & Emergency Finder</h1>
+
+        <nav>
+            <a href="admin.html">Dashboard</a>
+            <a href="admin-donors.html">Manage Donors</a>
+            <a href="admin-hospitals.html">Manage Hospitals</a>
+            <a href="admin-reports.html">View Reports</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <section class="manage-hospitals-section">
+
+        <h2>Manage Hospitals</h2>
+        <p>View and manage registered hospitals.</p>
+
+        <div class="hospital-admin-search">
+            <input type="text" id="hospitalSearch"
+                   placeholder="Search hospital by name">
+
+            <button onclick="searchAdminHospitals()">Search</button>
+        </div>
+
+        <p id="adminHospitalMessage"></p>
+
+        <div class="admin-table-container">
+
+            <table class="admin-hospital-table">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Hospital Name</th>
+                        <th>City</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Emergency</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="hospitalTableBody">
+
+                    <tr>
+                        <td>1</td>
+                        <td>City Hospital</td>
+                        <td>Lahore</td>
+                        <td>Main Road, Lahore</td>
+                        <td>0300-1234567</td>
+                        <td>Available</td>
+                        <td>
+                            <button onclick="changeHospitalStatus(this)">
+                                Change Status
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>General Hospital</td>
+                        <td>Islamabad</td>
+                        <td>Blue Area, Islamabad</td>
+                        <td>0300-7654321</td>
+                        <td>Available</td>
+                        <td>
+                            <button onclick="changeHospitalStatus(this)">
+                                Change Status
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Central Medical Hospital</td>
+                        <td>Karachi</td>
+                        <td>Main Boulevard, Karachi</td>
+                        <td>0300-9876543</td>
+                        <td>Unavailable</td>
+                        <td>
+                            <button onclick="changeHospitalStatus(this)">
+                                Change Status
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
